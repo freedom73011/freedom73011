@@ -1,0 +1,40 @@
+a{
+    color: #ffffff;
+    text-decoration-line: none;
+}
+
+
+
+
+
+
+nav{
+    background-color: #27343b;
+    padding: 20px;
+}
+
+nav .menu{
+    margin-right: 15px;
+    float: right;
+}
+
+nav .menu li{
+    float: left;
+    margin-right: 20px;
+}
+
+.dog-pic {
+    width: 1128px;
+    margin: auto;
+}
+
+.col{
+    float: left;
+    padding-left: 15px;
+    padding-left: 15px;
+}
+
+.dog-img{
+    border: 1px solid #743c3c;
+    padding: 10px;
+}
