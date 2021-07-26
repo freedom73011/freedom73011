@@ -28,13 +28,29 @@ nav .menu li{
     margin: auto;
 }
 
-.col{
+.dog-pic .col{
     float: left;
     padding-left: 15px;
     padding-left: 15px;
 }
 
 .dog-img{
+    border: 1px solid #743c3c;
+    padding: 10px;
+}
+
+.cat-pic {
+    width: 1128px;
+    margin: auto;
+}
+
+.cat-pic .col{
+    float: left;
+    padding-left: 15px;
+    padding-left: 15px;
+}
+
+.cat-img{
     border: 1px solid #743c3c;
     padding: 10px;
 }
