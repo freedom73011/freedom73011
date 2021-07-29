@@ -9,8 +9,12 @@ a{
 
 
 nav{
-    background-color: #27343b;
+    background-color: #5c8499af;
     padding: 20px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
 }
 
 nav .menu{
@@ -22,16 +26,76 @@ nav .menu li{
     float: left;
     margin-right: 20px;
 }
+nav .menu li a{
+    padding: 15px;
+}
+nav .menu li a:hover{
+    background-color: #f0e43c;
+}
+.menu li.dropDown{
+    position: relative;
+}
+.menu li.dropDown ul.subMenu{
+    position: absolute;
+    display: none;
+    background-color: #1a18186e;
+    top: 30px;
+    left: -15px;
+    width: 100%;
+    padding: 15px;
+}
+
+.menu li.dropDown:hover ul.subMenu{
+    display: block;
+}
+
+.menu li.dropDown ul.subMenu li{
+    width: 100%;
+    margin: 20px 0;
+}
+
+.AD1{
+    background-image: url(../img/AD-1.jpg);
+    background-size: cover;
+    height: 537px;
+    background-attachment: fixed;
+    background-position: center center;
+    position: relative;
+}
+.AD1-inside{
+    position:absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: #ffffff4b;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2rem;
+    height: 39px;
+    overflow: hidden;
+    transition: height 0.5s ease-out;
+    z-index: 9;
+}
+.AD1-inside:hover{
+    height: 100%;
+    transition: height 0.5s ease-in;
+}
+.text-big{
+    font-size: 30px;
+}
+
 
 .dog-pic {
     width: 1128px;
     margin: auto;
+    background-color: #33a2dd;
+    overflow: hidden;
+    padding: 10px;
 }
 
 .dog-pic .col{
     float: left;
-    padding-left: 15px;
-    padding-left: 15px;
+    padding: 15px;
 }
 
 .dog-img{
@@ -42,12 +106,14 @@ nav .menu li{
 .cat-pic {
     width: 1128px;
     margin: auto;
+    background-color:#f59313;
+    overflow: hidden;
+    padding: 10px;
 }
 
 .cat-pic .col{
     float: left;
-    padding-left: 15px;
-    padding-left: 15px;
+    padding: 15px;
 }
 
 .cat-img{
