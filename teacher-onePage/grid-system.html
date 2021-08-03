@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid: [row1] "head" 300px [row2] "head" 300px [row3] "head" 300px [row4]
+                  / [column1] 150px [column2] 150px [column3] 150px [column4] 150px [column5];
+                  ;
+
+        }
+        .item-a{
+            grid-column-start: column1;
+            grid-column-end: span 2;
+            grid-row-start: 2;
+            grid-row-end: row4;
+            background-color: rgb(255, 165, 55);
+        }
+        .item-b{
+            grid-column: column1 / span 2;
+            grid-row: 2 / span 2;
+            background-color: rgb(55, 242, 255);
+        }
+        .item-c{
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+            justify-self: start;
+            align-self: end;
+            place-self: end start ;
+            background-color: rgb(255, 55, 55)
+        }
+        .item-d{
+            background-color: rgb(255, 55, 195)
+        }
+        .item-e{
+            background-color: rgb(75, 55, 255)
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="item-a">item-a</div> -->
+        <!-- <div class="item-b">item-b</div> -->
+        <div class="item-c">item-c</div>
+        <!--<div class="item-d">item-d</div>
+        <div class="item-e">item-e</div> -->
+    </div>
+</body>
+</html>
