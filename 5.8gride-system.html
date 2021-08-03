@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gride-wrapper{
+            background-color:rgb(146, 137, 137) ;
+            height: 600px;
+            display: grid;
+            grid-template-rows:[row1] 25% [row2] 100px [row3] auto [row4];
+            grid-template-columns:[colum1] 100px [colum2] 100px [colum3] 100px  [colum4] 300px [colum5];
+            grid-template-areas: 
+            "head head head head"
+            "main main . sidebar"
+            "fotter fotter fotter fotter"
+            ;
+            /* justify-items: stretch;
+            align-items: stretch; */
+            /* place-items: center end; */
+            justify-content: space-around;
+            align-content: space-around;
+        }
+        .gride-item{
+            border: 5px solid #181717;
+        }
+        .gride-item:nth-child(1){
+            background-color: red;
+            grid-area: main;
+
+        }
+        .gride-item:nth-child(2){
+            background-color: rgb(38, 0, 255);
+            grid-area: sidebar;
+ 
+        }
+        .gride-item:nth-child(3){
+            background-color: rgb(238, 255, 0);
+            grid-area: head;
+ 
+        }
+    </style>
+</head>
+<body>
+    <div class="gride-wrapper">
+        <div class="gride-item">1</div>
+        <div class="gride-item">222222222</div>
+        <div class="gride-item">3333333333333333</div>
+        
+    </div>
+</body>
+</html>

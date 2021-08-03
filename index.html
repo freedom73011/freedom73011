@@ -7,23 +7,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/contact.css" type="text/css" />
+
 </head>
 <body>
     <nav>
-        <a href="#" class="">認養代替購買</a>
+        <a href="#" class="nav-logo"><img src="img/nav-logo.png" alt=""></a>
         <ul class="menu">
-            <li><a href="#">首頁</a></li>
-            <li><a href="#">關於我們</a></li>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="about.html">關於我們</a></li>
             <li class="dropDown"><a href="#">動物認養</a>
                 <ul class="subMenu">
-                    <li><a href="#">認養須知</a></li>
-                    <li><a href="#">認養狗狗</a></li>
-                    <li><a href="#">認養貓咪</a></li>
+                    <li><a href="index.html#notice-id">認養須知</a></li>
+                    <li><a href="index.html#dog-id">認養狗狗</a></li>
+                    <li><a href="index.html#cat-id">認養貓咪</a></li>
                 </ul>
             </li>
-            <li><a href="#">動物新聞</a></li>
-            <li><a href="#">合作夥伴</a></li>
-            <li><a href="#">聯絡我們</a></li>
+            <li><a href="blog.html">動物新聞</a></li>
+            <li><a href="partner.html">合作夥伴</a></li>
+            <li><a href="contact.html">聯絡我們</a></li>
         </ul>
     </nav>
     <div class="AD1">
@@ -34,7 +36,16 @@
             <img src="img/dog-cat.png" alt="">
         </div>
     </div>
-    <div class="dog-pic">
+    <div id="notice-id" class="notice">
+        <p><span class="notice-title">認養流程及須知<br></span><br>◎認養民眾需年滿20歲，攜帶身分證
+            <br>◎認養地點：<br>1.臺中市動物之家 <br>南屯園區：臺中市南屯區中台路601號 電話：04-23850949 
+            <br>后里園區：臺中市后里區堤防路370號 電話：04-25588024 <br> (后里園區因改建中，暫不開放) 
+            <br>2.中途動物醫院：本市委託辦理中途收容及絕育動物醫院，詳細所在醫院，公佈於動物認養資料「備註欄」，
+            「認養時間」請電洽各委辦動物醫院。<br>3.認養會場(益起認養吧、愛心小站、活動認養會場)<br>◎認養時間：10:00~12:00，13:30~16:00（星期日除外）
+            <br>◎認養中大型犬可申請送愛到家服務，範圍限大台中區域<br>◎免費認養，犬貓皆實施植入晶片寵物登記及注射狂犬病疫苗。
+            <br>◎本認養公告之犬貓均已絕育可供認養，採現場辦理認養手續為主，恕不受理預約。</p>
+    </div>
+    <div  id="dog-id" class="dog-pic">
         <div class="col">
             <div class="dog-img">
                 <img src="img/dog-img1.png" alt="" />
@@ -94,7 +105,7 @@
             </div>
         </div>
     </div>
-    <div class="cat-pic">
+    <div id="cat-id" class="cat-pic">
         <div class="col">
             <div class="cat-img">
                 <img src="img/cat-img5.png" alt="" />
@@ -154,46 +165,11 @@
             </div>
         </div>
     </div>
-    <!--合作夥伴-->
-    <div class="partner-wrapper">
-        <div class="partnet-title">
-            <h1>認養合作夥伴</h1>
-            <p>歡迎各單位加入為流浪毛小孩努力!</p>
-        </div>
-        <div class="partner-pic">
-            <div class="partner-thumb">
-               <img src="img/partner1.jpg" alt="">
-               <h2>台灣之星</h2> 
-            </div>
-            <div class="partner-thumb">
-                <img src="img/partner2.jpg" alt="">
-                <h2>中大汪汪社</h2> 
-             </div>
-             <div class="partner-thumb">
-                <img src="img/partner3.jpg" alt="">
-                <h2>高師大愛護動物社</h2> 
-             </div>
-             <div class="partner-thumb">
-                <img src="img/partner4.jpg" alt="">
-                <h2>陽明大學懷生社</h2> 
-             </div>
-             <div class="partner-thumb">
-                <img src="img/partner5.jpg" alt="">
-                <h2>雲科大汪汪社</h2> 
-             </div>
-             <div class="partner-thumb">
-                <img src="img/partner6.jpg" alt="">
-                <h2>成大流浪動物志工</h2> 
-             </div>
-             <div class="partner-thumb">
-                <img src="img/partner7.jpg" alt="">
-                <h2>慈大懷生社</h2> 
-             </div>
-             <div class="partner-thumb">
-                <img src="img/partner8.jpg" alt="">
-                <h2>中原大學動物服務社</h2> 
-             </div>
-        </div>
-    </div>
+    
+    
+    <footer>
+        <div class="footer-logo"><img src="img/logo.png" alt=""></div>
+        <div class="copy-right">Copyright @ 2018 動物認養平台. All Right Reserved</div>
+    </footer>
 </body>
 </html>

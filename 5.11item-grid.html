@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+        display: grid;
+        grid: [row1]"head" 300px [row2] "head"300px [row3] "head"300px [row4]
+              / [column1] 150px [column2] 150px [column3] 150px [column4] 150px [column5];
+        
+    }
+    .item-a{
+        grid-column-start: column1;
+        grid-column-end:  span 4;
+        grid-row-start: 2;
+        grid-row-end: row4;
+        background-color: red;
+    }
+    .item-b{
+        grid-column: column1 / span 2;
+        grid-row: 2 / span 2;
+        background-color: rgb(255, 136, 0);
+    }
+    .item-c{
+        grid-area: head;
+        background-color: rgb(166, 255, 0);
+    }
+    .item-d{
+        background-color: rgb(81, 255, 0);
+    } 
+    .item-e{
+        background-color: rgb(0, 38, 255);
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-a">item-a</div>
+        <div class="item-b">item-b</div>
+        <div class="item-c">item-c</div>
+        <div class="item-d">item-d</div>
+        <div class="item-e">item-e</div>
+    </div>
+</body>
+</html>
